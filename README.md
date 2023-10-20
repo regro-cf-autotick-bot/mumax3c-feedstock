@@ -1,11 +1,11 @@
-About mumax3c
-=============
+About mumax3c-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mumax3c-feedstock/blob/main/LICENSE.txt)
 
 Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mumax3c-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python interface to mumax3 integrated into Jupyter notebook.
 
