@@ -20,11 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - micromagneticmodel >=0.63.2
-    - micromagnetictests >=0.63.1
+    - micromagneticmodel >=0.64.0
+    - micromagnetictests >=0.63.2
     - scipy
-    - ubermagtable >=0.61.3
-    - ubermagutil >=0.63.2
+    - ubermagtable >=0.61.4
+    - ubermagutil >=0.63.4
 
 test:
   imports:
