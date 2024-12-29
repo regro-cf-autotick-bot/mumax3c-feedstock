@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f81786cb89c48d1da96a5b790d15b86c5228cfce3ce80ee066dba1f26728ce3b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - micromagneticmodel >=0.64.0
     - micromagnetictests >=0.63.2
     - scipy
@@ -34,6 +34,7 @@ test:
     # running unittests would require a GPU and a separate Mumax3 installation
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://ubermag.github.io/
